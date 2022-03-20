@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap");
+
+html {
+  height: 100vh;
+}
+
+body {
+  background: url("./resources/background-image.png");
+  background-size: cover;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-style: italic;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 1.5em;
+  background-color: #4460ac;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  color: aliceblue;
+  font-size: small;
+}
+
+li {
+  padding: 0.3em 1em 0 1em;
+}
+
+h1 {
+  margin-top: 0.5em;
+  padding-top: 0 em;
+  font-family: "Bangers", sans-serif;
+  margin-bottom: 0;
+  font-size: 5em;
+  text-align: center;
+  vertical-align: text-top;
+  font-size: 72px;
+  text-transform: uppercase;
+}
+
+h4 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 2em;
+}
+
+h1,
+h4 {
+  background: linear-gradient(to right, #0a033a, #6f93e1, #245194, #31a2bb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.main-header {
+  height: 11em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.first-section,
+.second-section,
+footer {
+  font-size: 1.5em;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #e48633, #80480cf9, #a48728, #3a6fa7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.second-section p {
+  width: 17.8em;
+  margin-right: 1.5em;
+}
+
+.with-border {
+  margin: 1em 1em 1em 1em;
+  padding: 1em 1em 1em 1em;
+  border-style: solid;
+  border-width: 2px;
+  border-image: linear-gradient(45deg, rgb(244, 212, 132), rgb(99, 155, 240)) 1;
+  border-radius: 25em;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 22vh;
+}
+
+footer img {
+  height: 2em;
+  width: auto;
+  padding: 0 0.5em 0 0;
+}
+
+/* Transforms */
+
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+.border-color {
+  transition: border-image 0.7s ease, background 0.5s;
+}
+
+.border-color:hover {
+  border-image: linear-gradient(45deg, rgb(20, 66, 135), rgb(189, 145, 32)) 1;
+}
+
+.header-color {
+  transition: background-color 0.5s;
+  transition: transform 0.2s;
+  padding-bottom: 1%;
+}
+
+.header-color:hover {
+  background-color: linear-gradient(
+    to right,
+    #063a46,
+    #245194,
+    #6f93e1,
+    #9485f7
+  );
+}
